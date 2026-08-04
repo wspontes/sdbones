@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Bonés — Bonés Personalizados Premium</title>
+    <meta name="description" content="SD Bonés: fábrica de bonés personalizados, estilosos e de alta qualidade. Atacado e varejo, envio para todo o Brasil. Faça seu orçamento no WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== BACKGROUND GLOW FIXO ===== -->
+    <div class="bg-glow" aria-hidden="true">
+        <div class="orb orb-red"></div>
+        <div class="orb orb-orange"></div>
+        <div class="orb orb-red-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container">
+            <a href="#inicio" class="brand" aria-label="SD Bonés — Início">
+                <span class="brand-icon"><img src="https://i.ibb.co/QvWr6qHB/Gemini-Generated-Image-k5nzqlk5nzqlk5nz-1.png"></i></span>
+                <span class="brand-text">SD <span>BONÉS</span></span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                <li><a href="#modelos" class="nav-link">Modelos</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li class="nav-cta-mobile">
+                    <a href="https://wa.me/5584986158290?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20de%20bon%C3%A9s%20personalizados." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+                        <i class="fa-brands fa-whatsapp"></i> Entrar em contato
+                    </a>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/5584986158290?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20de%20bon%C3%A9s%20personalizados." target="_blank" rel="noopener" class="btn btn-whatsapp nav-cta-desktop">
+                <i class="fa-brands fa-whatsapp"></i> Entrar em contato
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Fábrica própria · desde 2021</span>
+                <h1 class="hero-title">
+                    Estilo Único, <span class="gradient-text">Qualidade Premium</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Bonés personalizados com bordado de alta definição, acabamento impecável e design exclusivo.
+                    Do atacado ao varejo, entregamos estilo para todo o Brasil.
+                </p>
+                <div class="hero-actions">
+                    <a href="#galeria" class="btn btn-gradient">
+                        <i class="fa-solid fa-fire"></i> Ver Coleção
+                    </a>
+                    <a href="https://wa.me/5584986158290?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20de%20bon%C3%A9s." target="_blank" rel="noopener" class="btn btn-outline">
+                        <i class="fa-brands fa-whatsapp"></i> Fazer Orçamento
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Milhões de bonés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="8">0</span><span class="stat-plus">mil</span>
+                        <span class="stat-label">Clientes atendidos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-count="27">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Estados atendidos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-card-glow"></div>
+                <img class="hero-img" src="https://i.ibb.co/RG0pTcCv/Captura-de-tela-2026-08-04-175553.png" alt="Boné premium da SD Bonés">
+                <div class="hero-float-card float-card-1">
+                    <span class="float-icon"><i class="fa-solid fa-award"></i></span>
+                    <div>
+                        <strong>Bordado 3D</strong>
+                        <small>Alta definição</small>
+                    </div>
+                </div>
+                <div class="hero-float-card float-card-2">
+                    <span class="float-icon"><i class="fa-solid fa-truck-fast"></i></span>
+                    <div>
+                        <strong>Envio rápido</strong>
+                        <small>Todo o Brasil</small>
+                    </div>
+                </div>
+                <div class="hero-float-badge">Premium</div>
+            </div>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>BONÉS PERSONALIZADOS</span><i class="fa-solid fa-star"></i>
+                <span>BORDADO 3D</span><i class="fa-solid fa-star"></i>
+                <span>ATACADO &amp; VAREJO</span><i class="fa-solid fa-star"></i>
+                <span>ENVIO PARA TODO BRASIL</span><i class="fa-solid fa-star"></i>
+                <span>DESIGN EXCLUSIVO</span><i class="fa-solid fa-star"></i>
+                <span>BONÉS PERSONALIZADOS</span><i class="fa-solid fa-star"></i>
+                <span>BORDADO 3D</span><i class="fa-solid fa-star"></i>
+                <span>ATACADO &amp; VAREJO</span><i class="fa-solid fa-star"></i>
+                <span>ENVIO PARA TODO BRASIL</span><i class="fa-solid fa-star"></i>
+                <span>DESIGN EXCLUSIVO</span><i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag"><i class="fa-solid fa-star"></i> Sobre a SD Bonés</span>
+                <h2 class="section-title">Qualidade que <span class="gradient-text">aparece no seu estilo</span></h2>
+                <p class="section-sub">Há mais de 5 anos criando bonés que unem matéria-prima selecionada, bordado de precisão e acabamento que dura. Cada peça sai da nossa fábrica pronta para virar ícone no seu guarda-roupa ou no seu negócio.</p>
+            </div>
+
+            <div class="sobre-grid">
+                <article class="card feature reveal">
+                    <div class="card-glow"></div>
+                    <span class="feature-icon"><i class="fa-solid fa-boxes-stacked"></i></span>
+                    <h3>Atacado &amp; Varejo</h3>
+                    <p>Compre poucas unidades ou milhares. Tabela especial para revendedores, lojas e eventos com condições imperdíveis.</p>
+                </article>
+                <article class="card feature reveal">
+                    <div class="card-glow"></div>
+                    <span class="feature-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                    <h3>Design Exclusivo</h3>
+                    <p>Sua logo, seu nome, sua arte. Equipe de design cria a arte perfeita para bordado e estampa do seu boné.</p>
+                </article>
+                <article class="card feature reveal">
+                    <div class="card-glow"></div>
+                    <span class="feature-icon"><i class="fa-solid fa-truck-fast"></i></span>
+                    <h3>Envio para todo Brasil</h3>
+                    <p>Logística ágil com rastreio em tempo real. Seu pedido sai rápido e chega seguro em qualquer canto do país.</p>
+                </article>
+                <article class="card feature reveal">
+                    <div class="card-glow"></div>
+                    <span class="feature-icon"><i class="fa-solid fa-gem"></i></span>
+                    <h3>Bordado Premium</h3>
+                    <p>Bordado em 3D com fios de alta tenacidade. Cores vivas, definição extrema e durabilidade de verdade.</p>
+                </article>
+            </div>
+
+            <div class="sobre-banner reveal">
+                <div class="sobre-banner-text">
+                    <span class="section-tag light"><i class="gradient-text"></i> Números que falam</span>
+                    <h3>Mais de <span class="gradient-text">5 anos</span> bordando estilo e orgulho em cada cabeça</h3>
+                </div>
+                <a href="https://wa.me/5584986158290?text=Ol%C3%A1!%20Quero%20conhecer%20mais%20sobre%20a%20SD%20Bon%C3%A9s." target="_blank" rel="noopener" class="btn btn-gradient">
+                    <i class="fa-brands fa-whatsapp"></i> Falar com a fábrica
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERIA ===== -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag"><i class="fa-solid fa-images"></i> Galeria de Produtos</span>
+                <h2 class="section-title">Modelos que <span class="gradient-text">viram os seus favoritos</span></h2>
+                <p class="section-sub">Toque no modelo para ver os detalhes. Querendo um destes no seu time, empresa ou evento? Encomende e personalize do seu jeito.</p>
+            </div>
+
+            <div class="filter-bar reveal" id="filterBar">
+                <button class="filter-btn active" data-filter="todos"><i class="fa-solid fa-border-all"></i> Todos</button>
+                <button class="filter-btn" data-filter="abareta"><i class="fa-solid fa-cap-solid"></i> Aba Reta</button>
+                <button class="filter-btn" data-filter="trucker"><i class="fa-solid fa-mesh"></i> Trucker</button>
+                <button class="filter-btn" data-filter="americano"><i class="fa-solid fa-user-tie"></i> Americano</button>
+                <button class="filter-btn" data-filter="personalizados"><i class="fa-solid fa-palette"></i> Personalizados</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Items injetados via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MODELOS ===== -->
+    <section class="modelos" id="modelos">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag"><i class="fa-solid fa-shirt"></i>Nossa Linha</span>
+                <h2 class="section-title">Escolha o <span class="gradient-text">seu modelo</span></h2>
+                <p class="section-sub">Do clássico ao streetwear. Linhas desenvolvidas com materiais premium e ajuste perfeito para todo tipo de estilo.</p>
+            </div>
+
+            <div class="modelos-grid">
+                <article class="modelo-card reveal">
+                    <span class="modelo-tag">Mais vendido</span>
+                    <div class="modelo-emoji"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>Aba Reta</h3>
+                    <p>Estrutura firme, visual street. O queridinho da moda urbana e de times.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Palas rígidas</li>
+                        <li><i class="fa-solid fa-check"></i> 6 ou 7 painéis</li>
+                        <li><i class="fa-solid fa-check"></i> Bordado 3D frontal</li>
+                    </ul>
+                </article>
+                <article class="modelo-card reveal">
+                    <span class="modelo-tag">Clássico</span>
+                    <div class="modelo-emoji"><i class="fa-solid fa-hat-wizard"></i></div>
+                    <h3>Americano</h3>
+                    <p>Formato universal, ajuste flexível e acabamento atemporal para todas as gerações.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Fechamento plástico</li>
+                        <li><i class="fa-solid fa-check"></i> Curvatura natural</li>
+                        <li><i class="fa-solid fa-check"></i> Costura reforçada</li>
+                    </ul>
+                </article>
+                <article class="modelo-card reveal">
+                    <span class="modelo-tag">Trend</span>
+                    <div class="modelo-emoji"><i class="fa-solid fa-wind"></i></div>
+                    <h3>Trucker</h3>
+                    <p>Tela mesh respirável e estrutura leve. Perfeito para o dia a dia e para marcas.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Tela em mesh</li>
+                        <li><i class="fa-solid fa-check"></i> Leve e fresquinho</li>
+                        <li><i class="fa-solid fa-check"></i> Ideal para estamparia</li>
+                    </ul>
+                </article>
+                <article class="modelo-card reveal">
+                    <span class="modelo-tag">Exclusivo</span>
+                    <div class="modelo-emoji"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Personalizados</h3>
+                    <p>Sua identidade em cada ponto. Crie um boné 100% seu, do tecido ao bordado.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Cores sob medida</li>
+                        <li><i class="fa-solid fa-check"></i> Arte exclusiva</li>
+                        <li><i class="fa-solid fa-check"></i> Bordado ou estampa</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag"><i class="fa-solid fa-comment-dots"></i> Depoimentos</span>
+                <h2 class="section-title">Quem comprou, <span class="gradient-text">recomenda</span></h2>
+                <p class="section-sub">Milhares de clientes e lojistas já vestiram a SD. Veja o que eles dizem.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="testimonial-card reveal">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Encomendei 500 bonés para o uniforme da minha empresa. O bordado ficou impecável e a entrega foi antes do prazo. Virou fornecedor fixo!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/80?img=12" alt="Foto de Marcos Almeida" loading="lazy">
+                        <div>
+                            <strong>Marcos Almeida</strong>
+                            <small>Empreendedor · São Paulo/SP</small>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonial-card reveal">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"A aba reta da SD é disparada a melhor que já revendi. Meus clientes elogiam a qualidade toda semana. Revenda que vale a pena!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/80?img=47" alt="Foto de Carla Nogueira" loading="lazy">
+                        <div>
+                            <strong>Carla Nogueira</strong>
+                            <small>Lojista · Belo Horizonte/MG</small>
+                        </div>
+                    </div>
+                </article>
+                <article class="testimonial-card reveal">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Personalizei os bonés da confraria com bordado 3D e ficou surreal. Atendimento rápido e do outro lado da tela já senti a atenção da equipe."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/80?img=32" alt="Foto de Felipe Castro" loading="lazy">
+                        <div>
+                            <strong>Felipe Castro</strong>
+                            <small>Confraria · Curitiba/PR</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="cta-final" id="contato">
+        <div class="container">
+            <div class="cta-banner reveal">
+                <div class="cta-glow"></div>
+                <span class="cta-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                <h2>Pronto para dar <span class="gradient-text">estilo ao seu boné</span>?</h2>
+                <p>Fale agora com nosso time no WhatsApp e receba seu orçamento em minutos. Atacado e varejo, sem compromisso.</p>
+                <div class="cta-actions">
+                    <a href="https://wa.me/5584986158290?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20de%20bon%C3%A9s." target="_blank" rel="noopener" class="btn btn-gradient btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/sd.bones/" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg">
+                        <i class="fa-brands fa-instagram"></i> Ver Instagram
+                    </a>
+                </div>
+                <div class="cta-meta">
+                    <span><i class="fa-solid fa-clock"></i> Atendimento: seg–sex, 9h às 17h</span>
+                    <span><i class="fa-solid fa-bolt"></i> Resposta rápida</span>
+                    <span><i class="fa-solid fa-shield-halved"></i> Compra 100% segura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#inicio" class="brand">
+                    <span class="brand-icon"><img src="https://i.ibb.co/QvWr6qHB/Gemini-Generated-Image-k5nzqlk5nzqlk5nz-1.png"></span>
+                    <span class="brand-text">SD <span>BONÉS</span></span>
+                </a>
+                <p>Bonés personalizados premium com bordado de alta definição. Fabricação própria, atacado e varejo, envio para todo o Brasil.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/sd.bones/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/5584986158290" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#modelos">Modelos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="tel:+5584986158290"><i class="fa-solid fa-phone"></i> (84) 98615-8290</a></li>
+                    <li><a href="mailto:contato@sdbones.com.br"><i class="fa-solid fa-envelope"></i> contato@sdbones.com.br</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Serra Negra do Norte — RN</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> SD Bonés — Todos os direitos reservados.</p>
+            <p> CNPJ: 41.191.632/0001-67</p>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
+    <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- ===== WHATSAPP FLUTUANTE ===== -->
+    <a href="https://wa.me/5584986158290?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20de%20bon%C3%A9s." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

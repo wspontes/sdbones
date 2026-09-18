@@ -9,55 +9,55 @@ const galleryItems = [
         name: 'SD Street Fire',
         category: 'abareta',
         price: 'R$ 49,90',
-        image: 'https://i.ibb.co/prLkQvh6/Captura-de-tela-2026-08-04-180949.png'
+        image: 'images/bone-01.webp'
     },
     {
         name: 'SD Rota Verde',
         category: 'abareta',
         price: 'R$ 49,90',
-        image: 'https://i.ibb.co/WN45C6Bv/Captura-de-tela-2026-08-04-181000.png'
+        image: 'images/bone-02.webp'
     },
     {
         name: 'SD Clássica Branca',
         category: 'abareta',
         price: 'R$ 44,90',
-        image: 'https://i.ibb.co/prL7BTHK/Captura-de-tela-2026-08-04-181010.png'
+        image: 'images/bone-03.webp'
     },
     {
         name: 'SD Mesh Trucker',
         category: 'trucker',
         price: 'R$ 39,90',
-        image: 'https://i.ibb.co/xKWR52sK/Captura-de-tela-2026-08-04-181018.png'
+        image: 'images/bone-04.webp'
     },
     {
         name: 'SD Urbana',
         category: 'americano',
         price: 'R$ 42,90',
-        image: 'https://i.ibb.co/7xkqh3Cv/Captura-de-tela-2026-08-04-181025.png'
+        image: 'images/bone-05.webp'
     },
     {
         name: 'SD Meu Time',
         category: 'personalizados',
         price: 'Sob consulta',
-        image: 'https://i.ibb.co/nsc21jdS/Captura-de-tela-2026-08-04-181036.png'
+        image: 'images/bone-06.webp'
     },
     {
         name: 'SD Black Premium',
         category: 'americano',
         price: 'R$ 47,90',
-        image: 'https://i.ibb.co/1YDzjqKJ/Captura-de-tela-2026-08-04-181048.png'
+        image: 'images/bone-07.webp'
     },
     {
         name: 'SD Edição Limitada',
         category: 'personalizados',
         price: 'Sob consulta',
-        image: 'https://i.ibb.co/zTVGML9s/Captura-de-tela-2026-08-04-181057.png'
+        image: 'images/bone-08.webp'
     },
     {
         name: 'SD Trucker Neon',
         category: 'trucker',
         price: 'R$ 39,90',
-        image: 'https://i.ibb.co/5ZthRn2/Captura-de-tela-2026-08-04-181110.png'
+        image: 'images/bone-09.webp'
     }
 ];
 

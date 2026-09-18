@@ -63,8 +63,10 @@ const galleryItems = [
 
 /* ---------- Render Galeria ---------- */
 const galleryGrid = document.getElementById('galleryGrid');
+let currentItems = galleryItems;
 
 function renderGallery(items) {
+    currentItems = items;
     galleryGrid.innerHTML = '';
     items.forEach((item, index) => {
         const card = document.createElement('article');
@@ -78,8 +80,8 @@ function renderGallery(items) {
                 <span class="gallery-cat">${categoryLabel(item.category)}</span>
                 <h3 class="gallery-name">${item.name}</h3>
                 <div class="gallery-actions">
-                    <button class="btn-details" data-name="${item.name}">
-                        <i class="fa-solid fa-eye"></i> Ver Detalhes
+                    <button class="btn-details" data-index="${index}">
+                        <i class="fa-solid fa-expand"></i> Visualizar
                     </button>
                     <button class="btn-order" data-name="${item.name}">
                         <i class="fa-brands fa-whatsapp"></i> Encomendar
@@ -87,15 +89,14 @@ function renderGallery(items) {
                 </div>
             </div>
         `;
+        card.addEventListener('click', (e) => {
+            if (e.target.closest('.btn-order')) {
+                orderItem(e.target.closest('.btn-order').dataset.name);
+                return;
+            }
+            openLightbox(index);
+        });
         galleryGrid.appendChild(card);
-    });
-
-    galleryGrid.querySelectorAll('.btn-details').forEach(btn => {
-        btn.addEventListener('click', () => showDetails(btn.dataset.name));
-    });
-
-    galleryGrid.querySelectorAll('.btn-order').forEach(btn => {
-        btn.addEventListener('click', () => orderItem(btn.dataset.name));
     });
 }
 
@@ -127,26 +128,68 @@ filterBar.addEventListener('click', (e) => {
     renderGallery(items);
 });
 
-/* ---------- Detalhes & Encomenda ---------- */
-function showDetails(name) {
-    const item = galleryItems.find(i => i.name === name);
-    if (!item) return;
-    Swal.fire({
-        title: name,
-        text: `Modelo ${categoryLabel(item.category)} da SD Bonés por ${item.price}. Bordado premium, tecido selecionado e envio para todo o Brasil.`,
-        icon: 'info',
-        iconColor: '#FF8800',
-        background: '#151515',
-        color: '#FFFFFF',
-        confirmButtonText: 'Encomendar agora',
-        confirmButtonColor: '#E60000',
-        cancelButtonText: 'Fechar',
-        showCancelButton: true,
-        cancelButtonColor: '#333333'
-    }).then(result => {
-        if (result.isConfirmed) orderItem(name);
-    });
+/* ---------- Lightbox Galeria ---------- */
+const lightbox = document.getElementById('lightbox');
+const lbImage = document.getElementById('lbImage');
+const lbBg = document.getElementById('lbBg');
+const lbCounter = document.getElementById('lbCounter');
+const lbOrder = document.getElementById('lbOrder');
+const lbClose = document.getElementById('lbClose');
+const lbPrev = document.getElementById('lbPrev');
+const lbNext = document.getElementById('lbNext');
+
+let lbIndex = 0;
+
+function openLightbox(index) {
+    lbIndex = index;
+    updateLightbox();
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
 }
+
+function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+function updateLightbox() {
+    const item = currentItems[lbIndex];
+    if (!item) return;
+    lbImage.src = item.image;
+    lbImage.alt = item.name;
+    lbBg.style.backgroundImage = `url('${item.image}')`;
+    lbOrder.onclick = () => orderItem(item.name);
+    lbCounter.textContent = `${lbIndex + 1} / ${currentItems.length}`;
+}
+
+function prevItem() {
+    if (currentItems.length === 0) return;
+    lbIndex = (lbIndex - 1 + currentItems.length) % currentItems.length;
+    updateLightbox();
+}
+
+function nextItem() {
+    if (currentItems.length === 0) return;
+    lbIndex = (lbIndex + 1) % currentItems.length;
+    updateLightbox();
+}
+
+lbClose.addEventListener('click', closeLightbox);
+lbPrev.addEventListener('click', prevItem);
+lbNext.addEventListener('click', nextItem);
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') prevItem();
+    if (e.key === 'ArrowRight') nextItem();
+});
 
 function orderItem(name) {
     const msg = encodeURIComponent(`Olá! Quero encomendar o modelo *${name}* da SD Bonés. Podem me passar mais detalhes?`);
